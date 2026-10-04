@@ -1,0 +1,30 @@
+[project]
+name = "pipe_engine"
+version = "0.1.0"
+description = "Engineering deterministic engine: catalog lookup + earthwork formulas + xlsx-writer with formulas-on-output. Consumes extract.v1.json produced by the CAD agent."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "openpyxl>=3.1",
+]
+
+[project.optional-dependencies]
+# `formulas` is used only by the xlsx-formula-eval verification test
+# (tests/test_xlsx_writer.py::TestFormulaEvalMatchesPython). Not needed
+# at runtime — install with `pip install pipe_engine[verify]` only for
+# the strongest test guarantee.
+verify = [
+    "formulas>=1.3",
+]
+
+[project.scripts]
+pipe-engine = "pipe_engine.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pipe_engine*"]
+exclude = ["tests*", "scripts*"]

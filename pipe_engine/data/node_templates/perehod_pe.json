@@ -1,0 +1,26 @@
+{
+  "id": "perehod_pe",
+  "name": "Переход редукционный ПЭ100 ГАЗ",
+  "typical_drawing_ref": "Палитра ЗКЛ2/СО_Переход_ПЭ",
+  "detected_by_block": "СО_Переход_ПЭ",
+  "block_aliases": ["СО_Переход_ПЭ-Сталь"],
+  "host_dn_source": "attribute:DN",
+  "work_label": "Установка переходов редукционных ПЭ",
+  "components": [
+    {
+      "tag": "Переход редукционный ПЭ100 ГАЗ SDR11 (с ЗН встроенными фиксаторами)",
+      "qty": 1,
+      "unit": "шт",
+      "catalog_match": { "tag": "Переход ПЭ" }
+    }
+  ],
+  "variants_by_dn": [
+    {"host_dn":  63, "suffix": "DN63"},
+    {"host_dn":  90, "suffix": "DN90"},
+    {"host_dn": 110, "suffix": "DN110"},
+    {"host_dn": 160, "suffix": "DN160"},
+    {"host_dn": 225, "suffix": "DN225"},
+    {"host_dn": 315, "suffix": "DN315"}
+  ],
+  "notes": "DN parsed как primary (DN315 в 'DN315x225'). DN2 = secondary для catalog."
+}

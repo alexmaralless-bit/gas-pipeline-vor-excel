@@ -1,0 +1,43 @@
+{
+  "id": "kt_po_trasse",
+  "name": "Установка контрольной трубки по трассе",
+  "typical_drawing_ref": "Раздел IIII Кн.2.1/Лист 7/КТ.dwg (УГ 26.00 СБ)",
+  "detected_by_block": "СО_КТ_по_трассе",
+  "host_dn_source": "geometry",
+  "work_label": "Установка контрольной трубки под ковер, в т. ч.:",
+  "components": [
+    {
+      "tag": "Контрольная трубка на газопроводе по ковер",
+      "qty": 1,
+      "unit": "шт",
+      "catalog_match": { "tag": "контрольная трубка" }
+    },
+    {
+      "tag": "Ковер ТУ 400-28-91-84*",
+      "qty": 1,
+      "unit": "шт",
+      "catalog_match": { "tag": "Ковер" }
+    },
+    {
+      "tag": "Подушка под ковер",
+      "qty": 1,
+      "unit": "шт",
+      "catalog_match": { "tag": "Подушка под ковер" }
+    }
+  ],
+  "variants_by_dn": [
+    {"host_dn":  50, "suffix": "00", "L_mm":  300},
+    {"host_dn":  65, "suffix": "01", "L_mm":  350},
+    {"host_dn":  80, "suffix": "02", "L_mm":  370},
+    {"host_dn": 100, "suffix": "03", "L_mm":  400},
+    {"host_dn": 125, "suffix": "04", "L_mm":  460},
+    {"host_dn": 150, "suffix": "05", "L_mm":  500},
+    {"host_dn": 200, "suffix": "06", "L_mm":  630},
+    {"host_dn": 250, "suffix": "07", "L_mm":  740},
+    {"host_dn": 300, "suffix": "08", "L_mm":  840},
+    {"host_dn": 400, "suffix": "09", "L_mm": 1080},
+    {"host_dn": 500, "suffix": "10", "L_mm": 1250},
+    {"host_dn": 600, "suffix": "11", "L_mm": 1450}
+  ],
+  "notes": "Compositions sourced from эталонной ВР rows 36 (header) + 81-83 (similar КТ на футляре variant). Variant L-table from УГ 26.00 СБ assembly drawing."
+}

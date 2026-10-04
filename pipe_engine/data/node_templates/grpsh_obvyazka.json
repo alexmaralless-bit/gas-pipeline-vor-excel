@@ -1,0 +1,31 @@
+{
+  "id": "grpsh_obvyazka",
+  "name": "Установка и обвязка ГРПШ",
+  "typical_drawing_ref": "Типовые узлы/Шкафная уст-ка ГРПШ-10МС.dwg",
+  "triggered_by": "manual",
+  "manual_count_key": "grpsh",
+  "host_dn_source": "manual",
+  "work_label": "Установка и обвязка ГРПШ (на каждый шкаф)",
+  "components": [
+    {"tag": "Газорегуляторный пункт шкафной ГРПШ", "qty": 1, "unit": "шт", "catalog_match": {"tag": "ГРПШ"}},
+    {"tag": "Конденсатосборник на газопроводе DN50, PN≤1,2МПа", "qty": 1, "unit": "шт", "catalog_match": {"tag": "Конденсатосборник"}, "dn_hint": 50},
+    {"tag": "Ковер ТУ 400-28-91-84* (под конденсатосборник)", "qty": 3, "unit": "шт", "catalog_match": {"tag": "Ковер"}},
+    {"tag": "Подушка под ковер",                              "qty": 3, "unit": "шт", "catalog_match": {"tag": "Подушка под ковер"}},
+    {"tag": "Кран шаровой изолирующий",                       "qty": 1, "unit": "шт", "catalog_match": {"tag": "Кран ИФС"}, "dn_hint": 50},
+    {"tag": "Соединение изолирующее (ИФС) стальное под приварку", "qty": 1, "unit": "шт", "catalog_match": {"tag": "ИФС"}, "dn_hint": 50},
+    {"tag": "Переход стальной бесшовный приварной DN150/80",  "qty": 1, "unit": "шт", "catalog_match": {"tag": "Переход стальной"}, "dn_hint": 150},
+    {"tag": "Отводы стальные крутоизогнутые 3D DN50",         "qty": 4, "unit": "шт", "catalog_match": {"tag": "Отвод стальной"}, "dn_hint": 50},
+    {"tag": "Отводы стальные крутоизогнутые 3D DN150",        "qty": 2, "unit": "шт", "catalog_match": {"tag": "Отвод стальной"}, "dn_hint": 150},
+    {"tag": "Футляр стальной DN108×4 (Ду50), L=1м",            "qty": 1, "unit": "шт", "catalog_match": {"tag": "Футляр стальной"}, "dn_hint": 50},
+    {"tag": "Футляр стальной DN273×5 (Ду150), L=1м",           "qty": 1, "unit": "шт", "catalog_match": {"tag": "Футляр стальной"}, "dn_hint": 150},
+    {"tag": "Соединение неразъёмное ПЭ100/сталь DN50",        "qty": 1, "unit": "шт", "catalog_match": {"tag": "ИФС ПЭ-сталь"}, "dn_hint": 50},
+    {"tag": "Соединение неразъёмное ПЭ100/сталь DN150",       "qty": 1, "unit": "шт", "catalog_match": {"tag": "ИФС ПЭ-сталь"}, "dn_hint": 150},
+    {"tag": "Контрольная трубка под ковер DN50",              "qty": 1, "unit": "шт", "catalog_match": {"tag": "контрольная трубка"}, "dn_hint": 50},
+    {"tag": "Контрольная трубка под ковер DN150",             "qty": 1, "unit": "шт", "catalog_match": {"tag": "контрольная трубка"}, "dn_hint": 150},
+    {"tag": "Труба стальная Ду20",                            "qty": 9.8, "unit": "м", "catalog_match": {"tag": "Труба стальная"}, "dn_hint": 20},
+    {"tag": "Труба стальная Ду25",                            "qty": 4.2, "unit": "м", "catalog_match": {"tag": "Труба стальная"}, "dn_hint": 25},
+    {"tag": "Труба стальная Ду150",                           "qty": 4.5, "unit": "м", "catalog_match": {"tag": "Труба стальная"}, "dn_hint": 150},
+    {"tag": "Труба стальная Ду50",                            "qty": 5.5, "unit": "м", "catalog_match": {"tag": "Труба стальная"}, "dn_hint": 50}
+  ],
+  "notes": "Composition normalized from эталонной ВР rows 263-282 (ГРПШ-4). 19 components per ГРПШ. dn_hint проставлен per-component, т.к. host_dn=None для manual-trigger (ГРПШ обвязка содержит Ду20, Ду25, Ду50, Ду150 одновременно)."
+}

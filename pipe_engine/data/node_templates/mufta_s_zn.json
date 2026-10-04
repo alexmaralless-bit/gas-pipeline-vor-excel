@@ -1,0 +1,25 @@
+{
+  "id": "mufta_s_zn",
+  "name": "Муфта с ЗН ПЭ100 ГАЗ",
+  "typical_drawing_ref": "Палитра ЗКЛ2/СО_Муфта_с_ЗН",
+  "detected_by_block": "СО_Муфта_с_ЗН",
+  "host_dn_source": "attribute:DN",
+  "work_label": "Установка муфт с ЗН",
+  "components": [
+    {
+      "tag": "Муфта с ЗН ПЭ100 ГАЗ SDR11",
+      "qty": 1,
+      "unit": "шт",
+      "catalog_match": { "tag": "Муфта ПЭ ЗН" }
+    }
+  ],
+  "variants_by_dn": [
+    {"host_dn":  32, "suffix": "DN32"},
+    {"host_dn":  63, "suffix": "DN63"},
+    {"host_dn":  90, "suffix": "DN90"},
+    {"host_dn": 110, "suffix": "DN110"},
+    {"host_dn": 160, "suffix": "DN160"},
+    {"host_dn": 225, "suffix": "DN225"},
+    {"host_dn": 315, "suffix": "DN315"}
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "sedlo_otvod_pe_pryam_saturn",
+  "name": "Прямой седловой отвод ПЭ с ЗН (Сатурн)",
+  "typical_drawing_ref": "Палитра ЗКЛ2/СО_Седло_Отвод_ПЭ_прям_Сатурн",
+  "detected_by_block": "СО_Седло_Отвод_ПЭ_прям_Сатурн",
+  "host_dn_source": "attribute:DN",
+  "work_label": "Установка прямых седловых отводов Сатурн",
+  "components": [
+    {
+      "tag": "Прямой седловой отвод с ЗН и устройством фрезы ПЭ100 ГАЗ (Сатурн)",
+      "qty": 1,
+      "unit": "шт",
+      "catalog_match": { "tag": "Седловой отвод прямой Сатурн" }
+    }
+  ],
+  "variants_by_dn": [
+    {"host_dn": 110, "suffix": "DN110"},
+    {"host_dn": 160, "suffix": "DN160"},
+    {"host_dn": 225, "suffix": "DN225"},
+    {"host_dn": 315, "suffix": "DN315"}
+  ]
+}

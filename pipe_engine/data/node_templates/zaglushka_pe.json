@@ -1,0 +1,25 @@
+{
+  "id": "zaglushka_pe",
+  "name": "Заглушка ПЭ100 ГАЗ",
+  "typical_drawing_ref": "Палитра ЗКЛ2/СО_Загл_ПЭ",
+  "detected_by_block": "СО_Загл_ПЭ",
+  "host_dn_source": "attribute:DN",
+  "work_label": "Установка заглушек ПЭ",
+  "components": [
+    {
+      "tag": "Заглушка ПЭ100 ГАЗ SDR11 1.6МПа",
+      "qty": 1,
+      "unit": "шт",
+      "catalog_match": { "tag": "Заглушка ПЭ" }
+    }
+  ],
+  "variants_by_dn": [
+    {"host_dn":  25, "suffix": "DN25"},
+    {"host_dn":  32, "suffix": "DN32"},
+    {"host_dn":  63, "suffix": "DN63"},
+    {"host_dn":  90, "suffix": "DN90"},
+    {"host_dn": 110, "suffix": "DN110"},
+    {"host_dn": 140, "suffix": "DN140"}
+  ],
+  "notes": "Заглушка под землёй — pipe end-cap, sand pad НЕ требуется (в отличие от Узла А). НЕ включён в exit_sand_derivation (см. interpret.derive_exit_sand_from_extract)."
+}

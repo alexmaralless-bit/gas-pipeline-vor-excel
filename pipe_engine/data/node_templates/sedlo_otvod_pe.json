@@ -1,0 +1,25 @@
+{
+  "id": "sedlo_otvod_pe",
+  "name": "T-образный седловой отвод ПЭ с ЗН",
+  "typical_drawing_ref": "Палитра ЗКЛ2/СО_Седло_Отвод_ПЭ",
+  "detected_by_block": "СО_Седло_Отвод_ПЭ",
+  "host_dn_source": "attribute:DN",
+  "work_label": "Установка седловых отводов ПЭ",
+  "components": [
+    {
+      "tag": "T-образный седловой отвод с ЗН ПЭ100 ГАЗ",
+      "qty": 1,
+      "unit": "шт",
+      "catalog_match": { "tag": "Седловой отвод ПЭ" }
+    }
+  ],
+  "variants_by_dn": [
+    {"host_dn":  63, "suffix": "DN63"},
+    {"host_dn":  90, "suffix": "DN90"},
+    {"host_dn": 110, "suffix": "DN110"},
+    {"host_dn": 160, "suffix": "DN160"},
+    {"host_dn": 225, "suffix": "DN225"},
+    {"host_dn": 315, "suffix": "DN315"}
+  ],
+  "notes": "host_dn parsed из атрибута DN (e.g. 'Седловой отвод DN110х63' → 110). DN2=63 (boring DN) сохранён в attribute но в шаблоне не используется — добавится в catalog_match при Спец-лист integration."
+}

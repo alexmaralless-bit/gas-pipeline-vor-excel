@@ -83,6 +83,10 @@ docs/                    изображения для README
 
 Python 3.10+, openpyxl, SQLite, pytest, formulas (проверка формул).
 
+## Автор
+
+Telegram-канал [@sitimlab](https://t.me/sitimlab) · сайт [sitimlab.ru](https://sitimlab.ru/?utm_source=github&utm_medium=profile)
+
 ## Лицензия
 
 MIT, см. [LICENSE](LICENSE).
